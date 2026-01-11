@@ -1,0 +1,32 @@
+# Mosquito Detection System - Requirements
+# Raspberry Pi 4 Model B
+
+# TensorFlow Lite Runtime
+tflite-runtime>=2.5.0; platform_machine == "armv7l"
+tensorflow-lite>=2.5.0; platform_machine != "armv7l"
+
+# Computer Vision
+opencv-python-headless>=4.5.0
+numpy>=1.19.0
+Pillow>=8.0.0
+
+# Serial Communication (for OpenMV)
+pyserial>=3.5
+
+# OLED Display
+adafruit-circuitpython-ssd1306>=2.12.0
+adafruit-blinka>=6.0.0
+
+# Database (SQLite3 included with Python)
+
+# Visualization
+matplotlib>=3.5.0
+
+# Dashboard (optional)
+Flask>=2.0.0
+
+# Training (optional, for model training)
+tensorflow>=2.10.0; platform_machine != "armv7l"
+tensorflow-cpu>=2.10.0; platform_machine != "armv7l"
+matplotlib>=3.5.0
+

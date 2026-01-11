@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files (large)
+*.h5
+*.hdf5
+*.tflite
+*.pb
+*.onnx
+!models/.gitkeep
+
+# Dataset (too large)
+dataset/raw/
+dataset/processed_edgeimpulse/
+data/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+!dataset/README.md
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+*.csv
+
+# Plots and outputs
+plots/
+*.png
+*.jpg
+*.jpeg
+!docs/**/*.png
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Deployment specific
+deployment/*.service.backup
+*.pid
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+.env.local
+
+# Backup files
+*.backup
+*.old

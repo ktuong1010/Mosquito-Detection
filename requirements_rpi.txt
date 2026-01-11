@@ -1,0 +1,36 @@
+# Mosquito Detection System - Requirements for Raspberry Pi
+# Optimized for Raspberry Pi 4 Model B
+
+# TensorFlow (full version for ARM, includes newer TFLite runtime)
+# Note: Using full tensorflow instead of tflite-runtime for compatibility with newer models
+tensorflow>=2.10.0,<2.14.0; platform_machine == "armv7l"
+tensorflow-lite>=2.13.0; platform_machine != "armv7l"
+
+# Computer Vision
+opencv-python-headless>=4.5.0
+numpy>=1.19.0
+Pillow>=8.0.0
+
+# Raspberry Pi Camera Module 3 (picamera2 for Pi 5 and newer Pi 4 OS)
+# Note: picamera2 is usually pre-installed on Raspberry Pi OS, but can be installed with:
+# sudo apt-get install -y python3-picamera2
+# For older systems, OpenCV fallback will be used
+
+# OLED Display (SSD1306)
+adafruit-circuitpython-ssd1306>=2.12.0
+adafruit-blinka>=6.0.0
+
+# Database (SQLite3 included with Python)
+
+# Visualization (optional, for plotting)
+matplotlib>=3.5.0
+
+# Dashboard (optional, for web interface)
+Flask>=2.0.0
+
+# Training (optional, for model retraining on Raspberry Pi)
+# Note: TensorFlow on Raspberry Pi is slow, consider training on a more powerful machine
+tensorflow>=2.10.0; platform_machine != "armv7l"
+tensorflow-cpu>=2.10.0; platform_machine == "armv7l"
+scikit-learn>=1.0.0
+

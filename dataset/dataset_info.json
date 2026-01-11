@@ -1,0 +1,20 @@
+{
+  "total_images": 3348,
+  "num_species": 8,
+  "species": {
+    "Aedes Aegypti": 115,
+    "Aedes Vexans": 18,
+    "Armigeres Subalbatus": 1147,
+    "Coquillettidia Perturbans": 39,
+    "Culex Pipiens": 1256,
+    "Culex Quinquefasciatus": 658,
+    "Culex Territans [not sure]": 13,
+    "Culex Tritaeniorhynchus": 102
+  },
+  "body_parts": {
+    "unknown": 3347,
+    "leg": 1
+  },
+  "raw_path": "dataset\\raw",
+  "processed_path": "dataset\\processed"
+}

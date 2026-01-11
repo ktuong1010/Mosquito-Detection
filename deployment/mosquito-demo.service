@@ -1,0 +1,20 @@
+[Unit]
+Description=Mosquito Detection Demo
+After=network.target
+
+[Service]
+Type=simple
+User=khanhtuong
+WorkingDirectory=/home/khanhtuong/MosquitoDetection
+ExecStart=/usr/bin/python3 /home/khanhtuong/MosquitoDetection/scripts/demo.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment="PYTHONUNBUFFERED=1"
+ExecStartPre=/bin/sleep 5
+
+[Install]
+WantedBy=multi-user.target
+
+
